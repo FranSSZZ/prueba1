@@ -1,0 +1,217 @@
+/*PARA USAR ESTA FUENTE ----- font-family: 'Gloock', serif;> */
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+/*PARA USAR ESTA FUENTE ----- font-family: 'Roboto Slab', serif;> */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600;800&display=swap');
+
+body {
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 0;
+    /* font-family: 'Gloock', serif; */
+    font-size: 20px;
+}
+
+/* Reglas CSS para dispositivos de escritorio */
+/* Estilos para la barra de navegación en dispositivos de escritorio */
+.header {
+    background-color: #1b3039;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.header .logo {
+    cursor: pointer;
+} 
+.logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+.logo p {
+    font-family: 'Gloock', serif;
+    font-size: 22px;
+    text-align: center;
+    padding-left: 10px;
+    border-left: 3px solid white;
+    margin: 8px;
+    color: white;
+}
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+.header .logo:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+.header .nav-links {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 18px;
+    list-style: none;
+}
+.header .nav-links li {
+    display: inline-block;
+    /* padding: 0 20px; */
+    margin: 15px;
+    color: white;
+    /* padding: 10px; */
+}
+.header .nav-links li:hover {
+    transform: scale(1.1);
+    /* background-color: rgb(255, 137, 137); */
+    border-bottom: 1px solid white;
+    /*border-radius: 50px;*/
+}
+.header .nav-links a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none; 
+}
+.header .btn button {
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.header .btn button:hover {
+    background-color: white;
+    color: rgba(216, 85, 85, 0.854);
+    transform: scale(1.1);
+}
+
+/* submenu */
+.header .nav-links .submenu {
+    position: absolute;
+    background-color: #1b3039b0;
+    display: none;
+    z-index: 1;
+    
+    border-radius: 0px 0px 10px 10px;
+}
+.header .nav-links li:hover .submenu {
+    display: block;
+}
+.header .nav-links .submenu li {
+    display: block;
+    padding: 10px;
+    /* border-bottom: 1px solid white; */
+}
+.header .nav-links .submenu li:hover {
+    color: rgb(255, 137, 137);
+}
+.header .nav-links .submenu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+
+
+/* MEDIA QUERY para dispositivos móviles */
+ /* Estilos para la barra de navegación en dispositivos móviles */
+
+
+ @media only screen and (max-width: 768px) {
+    /* Ocultar la navegación principal */
+    .header .nav-links {
+      display: none;
+    }
+    
+    /* Mostrar el botón de hamburguesa */
+    .header .hamburguer-menu {
+      display: block;
+    }
+    
+    /* Ajustar el logo */
+    .header .logo {
+      margin-right: 0;
+      margin-left: 20px;
+    }
+  }
+/*
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Gloock', serif;
+    font-size: 100px;
+    margin-top: 18%;
+}
+h2 {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 150px;
+    text-align: center;
+    margin-top: auto;
+    line-height: 0%;
+}
+h3 {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: auto;
+    line-height: 0%;
+}
+img {
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 10%;
+}*/
+.logoprincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: -9%;
+}
+.logoprincipal .textologo {
+    margin-left: 0;
+    border-left: 30px solid white;
+    padding-left: 50px;
+}
+.logoprincipal .textologo h1 {
+    color: white;
+    font-family: 'Gloock', serif;
+    font-size: 350px;
+    margin-top: 11%;
+}
+.logoprincipal .textologo h2 {
+    color: white;
+    font-family: 'Gloock', serif;
+    font-size: 300px;
+    margin-top: auto;
+    line-height: 0%;
+}
+.logoprincipal .textologo h3 {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 111px;
+    margin-top: auto;
+    line-height: 0%;
+    font-weight: 300;
+}
+.logoprincipal img {
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
